@@ -1,0 +1,60 @@
+###############################################################
+#Summary:
+# Wed Jan 22 21:26:28 2014 ( holm.mathstat.strath.ac.uk ) 
+#Seed: 174822
+#mu: -4.000000, body_mean: 0.000000, body_sd: 0.010000
+#AE Effects Control:  1 1 1 1 2 1 1 1 
+#AE Effects Treatment:  1 1 2 1 2 1 1 1 
+#B: 8, T: 2, NT: 450, NC: 450
+#Treatment_effects: 0 0 
+#AE:  1 4 7 5 8 11 3 6  Total AEs:  45 
+#AE inc: Body System:  2  AE numer:  1 2 Increment:  1 
+#Body Effects:  0.01482848 0.001491995 -0.0004682278 0.005320473 -0.002344502 -0.003482154 -0.008132478 -0.004912874 
+# Original File: TDM15_MEDIUM_SIM162_REP11_FISHER.out
+###############################################################
+B               j  AE                 p
+"Bdy-sys_5" 7 "Adv-Ev_24"  1.000000
+"Bdy-sys_6" 9 "Adv-Ev_34"  0.358949
+"Bdy-sys_5" 4 "Adv-Ev_21"  0.152074
+"Bdy-sys_7" 2 "Adv-Ev_38"  0.650211
+"Bdy-sys_8" 4 "Adv-Ev_43"  0.589867
+"Bdy-sys_6" 11 "Adv-Ev_36"  1.000000
+"Bdy-sys_2" 1 "Adv-Ev_2"  0.005333
+"Bdy-sys_3" 6 "Adv-Ev_911"  0.000079
+"Bdy-sys_5" 5 "Adv-Ev_22"  0.259216
+"Bdy-sys_6" 6 "Adv-Ev_31"  1.000000
+"Bdy-sys_3" 3 "Adv-Ev_8"  0.000021
+"Bdy-sys_6" 5 "Adv-Ev_30"  0.419001
+"Bdy-sys_3" 1 "Adv-Ev_6"  0.000000
+"Bdy-sys_2" 2 "Adv-Ev_3"  0.016013
+"Bdy-sys_7" 1 "Adv-Ev_37"  0.154973
+"Bdy-sys_6" 2 "Adv-Ev_27"  0.358949
+"Bdy-sys_4" 4 "Adv-Ev_16"  0.877362
+"Bdy-sys_1" 1 "Adv-Ev_1"  0.289288
+"Bdy-sys_8" 1 "Adv-Ev_40"  0.230364
+"Bdy-sys_8" 6 "Adv-Ev_45"  0.688809
+"Bdy-sys_8" 2 "Adv-Ev_41"  0.071993
+"Bdy-sys_8" 5 "Adv-Ev_44"  0.706472
+"Bdy-sys_6" 10 "Adv-Ev_35"  0.348548
+"Bdy-sys_3" 5 "Adv-Ev_910"  0.000039
+"Bdy-sys_6" 3 "Adv-Ev_28"  0.578141
+"Bdy-sys_6" 1 "Adv-Ev_26"  0.628027
+"Bdy-sys_4" 3 "Adv-Ev_15"  1.000000
+"Bdy-sys_4" 1 "Adv-Ev_13"  0.679230
+"Bdy-sys_6" 4 "Adv-Ev_29"  0.871749
+"Bdy-sys_5" 8 "Adv-Ev_25"  0.826758
+"Bdy-sys_4" 2 "Adv-Ev_14"  0.407555
+"Bdy-sys_3" 2 "Adv-Ev_7"  0.000011
+"Bdy-sys_6" 7 "Adv-Ev_32"  0.240577
+"Bdy-sys_3" 4 "Adv-Ev_9"  0.010411
+"Bdy-sys_5" 1 "Adv-Ev_18"  0.693990
+"Bdy-sys_3" 7 "Adv-Ev_912"  0.003554
+"Bdy-sys_4" 5 "Adv-Ev_17"  0.337249
+"Bdy-sys_6" 8 "Adv-Ev_33"  0.871749
+"Bdy-sys_5" 2 "Adv-Ev_19"  0.626481
+"Bdy-sys_2" 3 "Adv-Ev_4"  0.650211
+"Bdy-sys_5" 3 "Adv-Ev_20"  0.290911
+"Bdy-sys_5" 6 "Adv-Ev_23"  0.029511
+"Bdy-sys_8" 3 "Adv-Ev_42"  1.000000
+"Bdy-sys_7" 3 "Adv-Ev_39"  1.000000
+"Bdy-sys_2" 4 "Adv-Ev_5"  0.743795
