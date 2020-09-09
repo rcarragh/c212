@@ -26,6 +26,7 @@ affiliations:
   - name: Health Data Research (UK), University of Strathclyde, Glasgow, UK
     index: 4
 bibliography: paper.bib
+csl: vancouver-superscript.csl
 date: \today
 output: pdf_document
 header-includes:
