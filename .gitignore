@@ -23,3 +23,4 @@ src/checkin.sh*
 src/checkout.sh*
 src/RCS/
 src/hier/
+paper/RCS/
