@@ -43,12 +43,6 @@ issues. These methods, which include both error controlling procedures for multi
 testing [@BH1995; @HZZ2010; @MA2012; @Y2008; @M2006],
 and Bayesian modelling approaches [@BB2004; @XMC2011; @phdthesis], are implemented in the `R` package `c212` (Table \ref{table:1}). 
 
-
-# Statement of Need 
-The detection of safety issues in the post-marketing phase of a treatment's life cycle, as opposed to the trial phase, can have a serious effect 
-on the health of patients and also a financial impact both for the companies developing the treatments, and the regulatory bodies responsible for 
-overseeing them. 
-
 | Method                                                | Description                           |
 | ----------------------------------------------------- | ------------------------------------- |
 | Benjamini-Hochberg procedure [@BH1995]                 | Control of False Discovery Rate       |
@@ -61,6 +55,11 @@ overseeing them.
 | Interim analysis model [@phdthesis]                    | Bayesian model for interim trial data |
 | Interim analysis model without point-mass [@phdthesis] | Bayesian model for interim trial data |
 : Methods in the c212 package. \label{table:1}
+
+# Statement of Need 
+The detection of safety issues in the post-marketing phase of a treatment's life cycle, as opposed to the trial phase, can have a serious effect 
+on the health of patients and also a financial impact both for the companies developing the treatments, and the regulatory bodies responsible for 
+overseeing them. 
 
 The `R` package `c212` provides a self-contained set of methods for clinical trial safety investigators, statisticians and researchers, to aid in
 the early detection of adverse events. It is designed to be easy to use with a simple data input format and interface. 
@@ -93,7 +92,7 @@ The main convergence diagnostics available directly within the package are the G
 The error controlling procedures included in the package follow exactly the method definitions in the papers which introduced 
 them [@BH1995; @HZZ2010; @MA2012; @Y2008; @M2006].
 The following sections contain examples which cover the main uses of the software. The data sets and functions used are fully documented in the 
-package [@cran].
+package.
 
 ## Multiple Hypothesis Testing
 
