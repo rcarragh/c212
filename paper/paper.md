@@ -13,9 +13,9 @@ tags:
 authors:
   - name: Raymond Carragher
     orcid: 0000-0002-0120-625X
-    affiliation: "1 2 4"
+    affiliation: "1, 2, 4"
   - name: Chris Robertson
-    affiliation: "2 3"
+    affiliation: "2, 3"
 affiliations:
   - name: Strathclyde Institute of Pharmacy and Biomedical Sciences, University of Strathclyde, Glasgow, UK
     index: 1
