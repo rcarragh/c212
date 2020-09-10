@@ -51,15 +51,15 @@ overseeing them.
 
 | Method                                                | Description                           |
 | ----------------------------------------------------- | ------------------------------------- |
-| Benjamini-Hochberg procedure[@BH1995]                 | Control of False Discovery Rate       |
-| Group Benjamini-Hochberg procedure[@HZZ2010]          | Control of False Discovery Rate       |
-| Double false discovery rate[@MA2012]                  | Control of False Discovery Rate       |
-| Subset BH-procedure[@Y2008]                           | Control of False Discovery Rate       |
-| Bonferroni correction[@M2006]                         | Control of Familywise Error Rate      |
-| Berry and Berry model[@BB2004]                        | Bayesian model for end of trial data  |
-| Berry and Berry model without point-mass[@XMC2011]    | Bayesian model for end of trial data  |
-| Interim analysis model[@phdthesis]                    | Bayesian model for interim trial data |
-| Interim analysis model without point-mass[@phdthesis] | Bayesian model for interim trial data |
+| Benjamini-Hochberg procedure [@BH1995]                 | Control of False Discovery Rate       |
+| Group Benjamini-Hochberg procedure [@HZZ2010]          | Control of False Discovery Rate       |
+| Double false discovery rate [@MA2012]                  | Control of False Discovery Rate       |
+| Subset BH-procedure [@Y2008]                           | Control of False Discovery Rate       |
+| Bonferroni correction [@M2006]                         | Control of Familywise Error Rate      |
+| Berry and Berry model [@BB2004]                        | Bayesian model for end of trial data  |
+| Berry and Berry model without point-mass [@XMC2011]    | Bayesian model for end of trial data  |
+| Interim analysis model [@phdthesis]                    | Bayesian model for interim trial data |
+| Interim analysis model without point-mass [@phdthesis] | Bayesian model for interim trial data |
 : Methods in the c212 package. \label{table:1}
 
 The `R` package `c212` provides a self-contained set of methods for clinical trial safety investigators, statisticians and researchers, to aid in
@@ -71,29 +71,29 @@ area of safety in clinical trials, as well those developing or testing methods f
 handling error rates when testing multiple hypotheses.
 Beyond safety in clinical trials, the package will be useful to any project which deals with multiple hypothesis testing, or projects where two 
 groups of comparative data may be modelled by hierarchical Bayesian binomial or Poisson models, with recent extensions of the Bayesian models to 
-observational data being developed.[@RC2020]
+observational data being developed [@RC2020].
 
 
-The `c212` package is currently being used both for clinical trial safety analysis[@FKL2016; @Munsaka2018; @WWM2018] and as a research tool in the
-investigation and development of new safety methods.[@Tan2020; @Tan2019]
+The `c212` package is currently being used both for clinical trial safety analysis [@FKL2016; @Munsaka2018; @WWM2018] and as a research tool in the
+investigation and development of new safety methods [@Tan2020; @Tan2019].
 
 
 # Overview
 
 The Bayesian models, under assumptions of conditional independence, are fitted using a Gibbs sampling Markov Chain Monte-Carlo (MCMC) 
-method.[@RCR1999] 
+method [@RCR1999].
 The posterior distributions of the model parameters are used to assess which adverse events may have increased rates on the treatment arm. 
 In the case of the Berry and Berry model, which is binomial, the `theta` model parameter, representing the increase in the log-odds of an event 
-occurring on the treatment arm, is used for this purpose.[@BB2004]
+occurring on the treatment arm, is used for this purpose [@BB2004].
 For the interim analysis models, which are Poisson based, the increase in the log rate of an event on the treatment arm is used for
-adverse event assessment. As in the Berry and Berry model this is represented by the parameter `theta`.[@phdthesis] 
-Functions for generating summary statistics and highest probability intervals are provided using the services of the `coda` package.[@coda2006] 
-The main convergence diagnostics available directly within the package are the Gelman-Rubin and Geweke statistics,[@GCSR2004] again from the 
+adverse event assessment. As in the Berry and Berry model this is represented by the parameter `theta` [@phdthesis].
+Functions for generating summary statistics and highest probability intervals are provided using the services of the `coda` package [@coda2006].
+The main convergence diagnostics available directly within the package are the Gelman-Rubin and Geweke statistics [@GCSR2004], again from the 
 `coda` package. Access to the raw samples is available for further processing should that be required.
 The error controlling procedures included in the package follow exactly the method definitions in the papers which introduced 
-them.[@BH1995; @HZZ2010; @MA2012; @Y2008; @M2006]
+them [@BH1995; @HZZ2010; @MA2012; @Y2008; @M2006].
 The following sections contain examples which cover the main uses of the software. The data sets and functions used are fully documented in the 
-package.[@cran]
+package [@cran].
 
 ## Multiple Hypothesis Testing
 
@@ -185,13 +185,13 @@ mod.BB.interim <- c212.BB.interim(c212.trial.interval.data1)
 
 # Software Details and Availibility
 
-The `c212` package was initially released to CRAN in 2017 and has been through a number of release cycles.[@cran]
+The `c212` package was initially released to CRAN in 2017 and has been through a number of release cycles.
 Before each release a full set of unit and functional tests are performed on the package development system, including memory checks with 
-valgrind[@valgrind] and Google address sanitizer.[@asan]
+valgrind [@valgrind] and Google address sanitizer [@asan].
 The package documentation also contains tests and examples based on data included in the package.
 
-The `c212` package is most easily downloaded and installed directly from CRAN[@cran] or, alternatively, 
-from the corresponding GitHub repository.[@github]
+The `c212` package is most easily downloaded and installed directly from CRAN [@cran] or, alternatively, 
+from the corresponding GitHub repository [@github].
 
 The authors are interested in extending the software to include new methods, particularly in the area of safety analysis, and would welcome 
 collaborations in this area. Any support issues or questions can be addressed directly to the corresponding author, through the associated CRAN 
