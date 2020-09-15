@@ -21,7 +21,7 @@ returned.
 A demonstration detailing how the code may be run is given in ./demo/demo_err_cnrl.r
 
 ### Test
-The directory ./error_contol contains a set of tests covering all the available error controlling methods.
+The directory ./error_control contains a set of tests covering all the available error controlling methods.
 In order to run the scripts associated with the test the user MUST be in the error_control directory:
 
 cd error_control
@@ -32,18 +32,18 @@ Expected test output:
 The directory ./baseline/ contains the expected test outputs (verified by applying the methods by hand).
 The outputs are contained in files:
 
-bh.10.dat - Benjamini-Hochberge procedure at 10% level
-bh.dat - Benjamini-Hochberge procedure at 5% level
+bh.10.dat - Benjamini-Hochberg procedure at 10% level
+bh.dat - Benjamini-Hochberg procedure at 5% level
 bonf.10.dat - Bonferroni correction at 10% level
 bonf.dat - Bonferroni correction at 5% level
 dfdr.10.dat - Double False Discovery rate at 10% level
 dfdr.dat - Double False Discovery rate at 5% level
-gbh.10.dat - Group Benjamini-Hochberge procedure at 10% level
-gbh.dat - Group Benjamini-Hochberge procedure at 5% level
+gbh.10.dat - Group Benjamini-Hochberg procedure at 10% level
+gbh.dat - Group Benjamini-Hochberg procedure at 5% level
 noadj.10.dat - unadjusted testing at 10% level
 noadj.dat - unadjusted testing at 5% level
-ssbh.10.dat - Subset Benjamini-Hochberge procedure at 10% level
-ssbh.dat - Subset Benjamini-Hochberge proc at 5% leveledure
+ssbh.10.dat - Subset Benjamini-Hochberg procedure at 10% level
+ssbh.dat - Subset Benjamini-Hochberg procedure at 5% level
 
 Running the tests:
 ------------------
@@ -97,7 +97,7 @@ Each analysis follows the same set of steps:
 --------------------------------------------
 1. Load the data (file or data frame).
 2. Call the model fitting function (c212.BB/c212.1a/c212.BB.interim/c212.1a.interim).
-3. Check convergenc. (c212.convergence.diag/c212.print.convergence.summary).
+3. Check convergence. (c212.convergence.diag/c212.print.convergence.summary).
 4. If required - produce summary statisics (c212.summary.stats/c212.print.summary.stats).
 5. Assess which adverse events are associated with treatment (c212.ptheta).
 
@@ -122,7 +122,7 @@ Tests:
 1. ./c212.1a - test c212.1a and related functions (conv, summary, ptheta): 
 			./default_parameters - run with default parameters
 			./changed_global_params  - change global parameters controlling sampling procedure.
-			./single_chain - runs a single chain model fit wih default parameters
+			./single_chain - runs a single chain model fit with default parameters
 			./changed_parameters - change individual simulation parameters
 			./initial_values/ - run model with user supplied initial values
 2. ./c212.BB - test c212.BB and related functions (conv, summary, ptheta):
