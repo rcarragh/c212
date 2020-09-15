@@ -1,0 +1,38 @@
+Summary Convergence Diagnostics:
+================================
+theta:
+------
+Max Geweke statistic (Bdy-sys_6 Adv-Ev_30): 2.787408 (*)
+Min Geweke statistic (Bdy-sys_4 Adv-Ev_13): -2.598559 (*)
+gamma:
+------
+Max Geweke statistic (Bdy-sys_4 Adv-Ev_13): 2.194893 (*)
+Min Geweke statistic (Bdy-sys_6 Adv-Ev_33): -2.037276 (*)
+mu.gamma:
+---------
+Max Geweke statistic (Bdy-sys_3): 1.093964 (-)
+Min Geweke statistic (Bdy-sys_6): -1.735661 (-)
+mu.theta:
+---------
+Max Geweke statistic (Bdy-sys_6): 2.706948 (*)
+Min Geweke statistic (Bdy-sys_4): -2.275815 (*)
+sigma2.gamma:
+-------------
+Max Geweke statistic (Bdy-sys_2): 0.585690 (-)
+Min Geweke statistic (Bdy-sys_6): -1.637445 (-)
+sigma2.theta:
+-------------
+Max Geweke statistic (Bdy-sys_3): 1.822103 (-)
+Min Geweke statistic (Bdy-sys_4): -2.498394 (*)
+mu.gamma.0:
+-----------
+Geweke statistic: 0.412708 (-)
+mu.theta.0:
+-----------
+Geweke statistic: -1.908565 (-)
+tau2.gamma.0:
+-------------
+Geweke statistic: -1.252299 (-)
+tau2.theta.0:
+-------------
+Geweke statistic: -1.145250 (-)

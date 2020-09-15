@@ -1,0 +1,105 @@
+###############################################################
+#Summary:
+# Wed Jan 22 21:26:28 2014 ( holm.mathstat.strath.ac.uk ) 
+#Seed: 174822
+#mu: -4.000000, body_mean: 0.000000, body_sd: 0.010000
+#AE Effects Control:  1 1 1 1 2 1 1 1 
+#AE Effects Treatment:  1 1 2 1 2 1 1 1 
+#B: 8, T: 2, NT: 450, NC: 450
+#Treatment effects: 0 0 
+#AE:  1 4 7 5 8 11 3 6  Total AEs:  45 
+#AE inc: Body System:  2  AE numer:  1 2 Increment:  1 
+#Body Effects:  0.01482848 0.001491995 -0.0004682278 0.005320473 -0.002344502 -0.003482154 -0.008132478 -0.004912874 
+# Original file: TDM15_MEDIUM_SIM162_REP11_R.dat
+###############################################################
+B                j AE                 Group   Count  Total
+"Bdy-sys_2"  1 "Adv-Ev_2"  1       20      450
+"Bdy-sys_2"  4 "Adv-Ev_5"  2       21      450
+"Bdy-sys_5"  2 "Adv-Ev_19"  1       64      450
+"Bdy-sys_5"  7 "Adv-Ev_24"  2       50      450
+"Bdy-sys_6"  6 "Adv-Ev_31"  2       19      450
+"Bdy-sys_4"  4 "Adv-Ev_16"  1       21      450
+"Bdy-sys_5"  1 "Adv-Ev_18"  1       57      450
+"Bdy-sys_3"  1 "Adv-Ev_6"  1       17      450
+"Bdy-sys_8"  3 "Adv-Ev_42"  2       25      450
+"Bdy-sys_7"  3 "Adv-Ev_39"  2       23      450
+"Bdy-sys_5"  7 "Adv-Ev_24"  1       51      450
+"Bdy-sys_6"  9 "Adv-Ev_34"  2       26      450
+"Bdy-sys_2"  2 "Adv-Ev_3"  1       24      450
+"Bdy-sys_6"  9 "Adv-Ev_34"  1       19      450
+"Bdy-sys_8"  6 "Adv-Ev_45"  1       28      450
+"Bdy-sys_6"  4 "Adv-Ev_29"  1       21      450
+"Bdy-sys_2"  2 "Adv-Ev_3"  2       44      450
+"Bdy-sys_4"  3 "Adv-Ev_15"  1       25      450
+"Bdy-sys_3"  3 "Adv-Ev_8"  1       11      450
+"Bdy-sys_3"  6 "Adv-Ev_911"  2       45      450
+"Bdy-sys_2"  3 "Adv-Ev_4"  1       25      450
+"Bdy-sys_5"  5 "Adv-Ev_22"  1       49      450
+"Bdy-sys_6"  7 "Adv-Ev_32"  2       10      450
+"Bdy-sys_8"  6 "Adv-Ev_45"  2       32      450
+"Bdy-sys_6"  2 "Adv-Ev_27"  2       19      450
+"Bdy-sys_6"  5 "Adv-Ev_30"  2       17      450
+"Bdy-sys_7"  1 "Adv-Ev_37"  1       12      450
+"Bdy-sys_5"  2 "Adv-Ev_19"  2       58      450
+"Bdy-sys_5"  3 "Adv-Ev_20"  1       45      450
+"Bdy-sys_5"  4 "Adv-Ev_21"  2       56      450
+"Bdy-sys_6"  7 "Adv-Ev_32"  1       17      450
+"Bdy-sys_5"  6 "Adv-Ev_23"  2       42      450
+"Bdy-sys_7"  2 "Adv-Ev_38"  1       25      450
+"Bdy-sys_5"  1 "Adv-Ev_18"  2       62      450
+"Bdy-sys_8"  2 "Adv-Ev_41"  2       21      450
+"Bdy-sys_2"  1 "Adv-Ev_2"  2       42      450
+"Bdy-sys_5"  8 "Adv-Ev_25" 2       48      450
+"Bdy-sys_5"  6 "Adv-Ev_23"  1       64      450
+"Bdy-sys_2"  4 "Adv-Ev_5"  1       18      450
+"Bdy-sys_7"  3 "Adv-Ev_39"  1       24      450
+"Bdy-sys_4"  5 "Adv-Ev_17"  1       17      450
+"Bdy-sys_1"  1 "Adv-Ev_1"  1       19      450
+"Bdy-sys_3"  4 "Adv-Ev_9"  1       26      450
+"Bdy-sys_8"  2 "Adv-Ev_41"  1       35      450
+"Bdy-sys_3"  4 "Adv-Ev_9"  2       48      450
+"Bdy-sys_6"  3 "Adv-Ev_28"  2       25      450
+"Bdy-sys_6"  11 "Adv-Ev_36"  1       16      450
+"Bdy-sys_7"  1 "Adv-Ev_37"  2       21      450
+"Bdy-sys_6"  6 "Adv-Ev_31"  1       19      450
+"Bdy-sys_3"  5 "Adv-Ev_910"  2       59      450
+"Bdy-sys_6"  4 "Adv-Ev_29"  2       19      450
+"Bdy-sys_3"  6 "Adv-Ev_911"  1       15      450
+"Bdy-sys_6"  5 "Adv-Ev_30"  1       23      450
+"Bdy-sys_8"  5 "Adv-Ev_44"  2       13      450
+"Bdy-sys_6"  2 "Adv-Ev_27"  1       26      450
+"Bdy-sys_4"  1 "Adv-Ev_13"  1       26      450
+"Bdy-sys_4"  2 "Adv-Ev_14"  1       22      450
+"Bdy-sys_6"  8 "Adv-Ev_33"  1       19      450
+"Bdy-sys_4"  1 "Adv-Ev_13"  2       30      450
+"Bdy-sys_6"  3 "Adv-Ev_28"  1       30      450
+"Bdy-sys_8"  3 "Adv-Ev_42"  1       25      450
+"Bdy-sys_8"  4 "Adv-Ev_43"  1       18      450
+"Bdy-sys_3"  1 "Adv-Ev_6"  2       64      450
+"Bdy-sys_5"  4 "Adv-Ev_21"  1       72      450
+"Bdy-sys_6"  8 "Adv-Ev_33"  2       21      450
+"Bdy-sys_5"  5 "Adv-Ev_22"  2       38      450
+"Bdy-sys_4"  2 "Adv-Ev_14"  2       16      450
+"Bdy-sys_3"  2 "Adv-Ev_7"  1       23      450
+"Bdy-sys_3"  3 "Adv-Ev_8"  2       41      450
+"Bdy-sys_4"  3 "Adv-Ev_15"  2       26      450
+"Bdy-sys_1"  1 "Adv-Ev_1"  2       27      450
+"Bdy-sys_5"  3 "Adv-Ev_20"  2       56      450
+"Bdy-sys_8"  5 "Adv-Ev_44"  1       16      450
+"Bdy-sys_4"  5 "Adv-Ev_17"  2       11      450
+"Bdy-sys_3"  7 "Adv-Ev_912"  2       50      450
+"Bdy-sys_8"  4 "Adv-Ev_43"  2       14      450
+"Bdy-sys_6"  11 "Adv-Ev_36"  2       15      450
+"Bdy-sys_6"  1 "Adv-Ev_26"  1       22      450
+"Bdy-sys_7"  2 "Adv-Ev_38"  2       21      450
+"Bdy-sys_6"  10 "Adv-Ev_35"  2       18      450
+"Bdy-sys_5"  8 "Adv-Ev_25"  1       45      450
+"Bdy-sys_8"  1 "Adv-Ev_40"  1       28      450
+"Bdy-sys_3"  5 "Adv-Ev_910"  1       23      450
+"Bdy-sys_6"  10 "Adv-Ev_35"  1       25      450
+"Bdy-sys_4"  4 "Adv-Ev_16"  2       23      450
+"Bdy-sys_2"  3 "Adv-Ev_4"  2       21      450
+"Bdy-sys_8"  1 "Adv-Ev_40"  2       19      450
+"Bdy-sys_6"  1 "Adv-Ev_26"  2       18      450
+"Bdy-sys_3"  2 "Adv-Ev_7"  2       62      450
+"Bdy-sys_3"  7 "Adv-Ev_912"  1       25      450

@@ -1,0 +1,60 @@
+Summary Convergence Diagnostics:
+================================
+theta:
+------
+Max Geweke statistic (180.0-360.0 Bdy-sys_14 Adv-Ev_139): 4.498320 (*)
+Min Geweke statistic (0.0-180.0 Bdy-sys_11 Adv-Ev_106): -2.545561 (*)
+gamma:
+------
+Max Geweke statistic (180.0-360.0 Bdy-sys_15 Adv-Ev_155): 2.943859 (*)
+Min Geweke statistic (180.0-360.0 Bdy-sys_14 Adv-Ev_139): -3.487939 (*)
+mu.gamma:
+---------
+Max Geweke statistic (180.0-360.0 Bdy-sys_5): 2.761537 (*)
+Min Geweke statistic (180.0-360.0 Bdy-sys_14): -2.657524 (*)
+mu.theta:
+---------
+Max Geweke statistic (180.0-360.0 Bdy-sys_14): 1.043001 (-)
+Min Geweke statistic (180.0-360.0 Bdy-sys_5): -1.567222 (-)
+sigma2.gamma:
+-------------
+Max Geweke statistic (180.0-360.0 Bdy-sys_12): 2.006584 (*)
+Min Geweke statistic (0.0-180.0 Bdy-sys_15): -2.038865 (*)
+sigma2.theta:
+-------------
+Max Geweke statistic (180.0-360.0 Bdy-sys_2): 1.783352 (-)
+Min Geweke statistic (0.0-180.0 Bdy-sys_10): -2.190703 (*)
+pi:
+---
+Max Geweke statistic (0.0-180.0 Bdy-sys_2): 2.268337 (*)
+Min Geweke statistic (180.0-360.0 Bdy-sys_5): -1.870663 (-)
+mu.gamma.0:
+-----------
+Max Geweke statistic: -0.023033 (-)
+Min Geweke statistic: -0.023033 (-)
+mu.theta.0:
+-----------
+Max Geweke statistic: -0.234969 (-)
+Min Geweke statistic: -0.234969 (-)
+tau2.gamma.0:
+-------------
+Max Geweke statistic: -0.010190 (-)
+Min Geweke statistic: -0.010190 (-)
+tau2.theta.0:
+-------------
+Max Geweke statistic: 1.041974 (-)
+Min Geweke statistic: 1.041974 (-)
+alpha.pi:
+----------
+Max Geweke statistic: 0.257652 (-)
+Min Geweke statistic: 0.257652 (-)
+beta.pi:
+----------
+Max Geweke statistic: 0.241860 (-)
+Min Geweke statistic: 0.241860 (-)
+
+Sampling Acceptance Rates:
+==========================
+theta:
+------
+[1] "Min: 0.227267, Max: 0.604683"

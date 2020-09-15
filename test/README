@@ -1,0 +1,242 @@
+# DEMOS AND TESTS FOR C212
+This directory contains demonstration analyses and test results for the c212 package. 
+The tests cover all the main use cases of the software and exercise the available functionality.
+These may be run on Linux or Windows.
+
+c212 contains 2 types of methods:
+- Error controlling methods
+- Bayesian models
+
+## Error controlling methods
+============================
+The error controlling methods are accessed through the function c212.err.cntrl.
+The p-values of the hypotheses to which the method is to be applied should
+be in a file or data frame in the same form as the data set c212.FDR.data
+supplied with the package. The chosen method and level of control are passed
+to the function c212.err.cntrl and the hypotheses deemed significant are
+returned. 
+
+### Demonstration
+=================
+A demonstration detailing how the code may be run is given in ./demo/demo_err_cnrl.r
+
+### Test
+The directory ./error_contol contains a set of tests covering all the available error controlling methods.
+In order to run the scripts associated with the test the user MUST be in the error_control directory:
+
+cd error_control
+
+Expected test output:
+----------------------
+
+The directory ./baseline/ contains the expected test outputs (verified by applying the methods by hand).
+The outputs are contained in files:
+
+bh.10.dat - Benjamini-Hochberge procedure at 10% level
+bh.dat - Benjamini-Hochberge procedure at 5% level
+bonf.10.dat - Bonferroni correction at 10% level
+bonf.dat - Bonferroni correction at 5% level
+dfdr.10.dat - Double False Discovery rate at 10% level
+dfdr.dat - Double False Discovery rate at 5% level
+gbh.10.dat - Group Benjamini-Hochberge procedure at 10% level
+gbh.dat - Group Benjamini-Hochberge procedure at 5% level
+noadj.10.dat - unadjusted testing at 10% level
+noadj.dat - unadjusted testing at 5% level
+ssbh.10.dat - Subset Benjamini-Hochberge procedure at 10% level
+ssbh.dat - Subset Benjamini-Hochberge proc at 5% leveledure
+
+Running the tests:
+------------------
+The tests may be run by 
+1) cd ./test and running the file run.r in R
+or
+2) Linux: ./run.sh (unix) 
+   Windows: run.bat
+
+The test outputs are files with the same naming convention as the expected outcomes.
+
+Checking the results:
+---------------------
+The results may be verified by hand or automatically by the scripts
+1) Linux: check_test.sh
+2) Windows: check_test.bat
+
+Example
+=======
+[]$ cd error_control/
+[]$ ls
+baseline/       check_test.r    cleanup.bat  run.bat  test/
+check_test.bat  check_test.sh*  cleanup.sh*  run.sh*
+
+[]$ ./run.sh
+Loading required package: coda
+> source("run.r")
+>
+[]$ ./check_test.sh
+[]$ echo $?
+0
+
+
+## Bayesian Methods
+===================
+There are 4 main interfaces to the Bayesian functionality:
+- c212.BB
+- c212.BB.interim
+- c212.1a
+- c212.1a.interim
+
+### Demonstrations Analyses
+===========================
+Demonstration analyses for the main functionality are in the ./demo directory:
+- c212.BB - ./demo/demo_c212_BB.r
+- c212.1a - ./demo/demo_c212_1a.r
+- c212.BB.interim - ./demo/demo_c212_BB_interim.r
+- c212.1a.interim - ./demo/demo_c212_1a_interim.r
+
+Each analysis follows the same set of steps:
+--------------------------------------------
+1. Load the data (file or data frame).
+2. Call the model fitting function (c212.BB/c212.1a/c212.BB.interim/c212.1a.interim).
+3. Check convergenc. (c212.convergence.diag/c212.print.convergence.summary).
+4. If required - produce summary statisics (c212.summary.stats/c212.print.summary.stats).
+5. Assess which adverse events are associated with treatment (c212.ptheta).
+
+
+### Test
+========
+The test data for the methods are in correspondingly named directories:
+- c212.BB
+- c212.BB.interim
+- c212.1a
+- c212.1a.interim
+Within each of these directories are subdirectories containing variations on the tests (parameter changes etc).
+
+As the Bayesian methods rely on sampling there is a degree of variation in the model outputs.
+Consequently the tests for the Bayesian methods consist of two parts:
+- Correctly predict which AEs are associated with treatment for a data set for which these outcomes are known.
+- Match the results of the previous release of the software for a given random seed. This should happen unless the order
+of sampling within the code has been changed.
+
+Tests:
+======
+1. ./c212.1a - test c212.1a and related functions (conv, summary, ptheta): 
+			./default_parameters - run with default parameters
+			./changed_global_params  - change global parameters controlling sampling procedure.
+			./single_chain - runs a single chain model fit wih default parameters
+			./changed_parameters - change individual simulation parameters
+			./initial_values/ - run model with user supplied initial values
+2. ./c212.BB - test c212.BB and related functions (conv, summary, ptheta):
+			./changed_global_sim_params - change global parameters controlling sampling procedure
+			./changed_individual_sim_params - change individual simulation parameters
+			./changed_pm_weights - change the weighting for the point-mass mixture
+			./default_parameters - run with default parameters
+			./initial_values - run model with user supplied initial values
+			./single_chain - runs a single chain model fit wih default parameters
+3. ./c212.interim.1a - test c212.interim.1a and related functions (conv, summary, ptheta):
+			./default_parameters - run with default parameters
+			./changed_parameters  - change individual simulation parameters
+			./initial_values - run model with user supplied initial values
+			./single_chain  - runs a single chain model fit wih default parameters
+4. ./c212.interim.BB - test c212.interim.BB and related functions (conv, summary, ptheta):
+			./changed_pm_weights - change the weighting for the point-mass mixture
+			./changed_sim_params  - change individual simulation parameters
+			./single_chain  - runs a single chain model fit wih default parameters
+			./default_parameters - run with default parameters
+			./initial_values - run model with user supplied initial values
+
+
+Within each of these tests subdirectories the following exists:
+baseline: directory containing the files:
+	RAISED_AES - adverse events known to have raised treatment rates
+	conv.dat - convergence statistics from the previous software release
+	summary.dat - summary statistics from the previous software release
+	ptheta.dat - theta posterior probabilities from the previous software release
+	ptheta95.dat / ptheta80.dat - theta posterior probabilities exceeding 0.95 / 0.80
+
+data: the input data for the test.
+
+test: test directory where output files are created.
+	run.r - script to run the test. The tests can be run by hand by running this script in R.
+
+run.sh/run.bat: Run the tests.
+
+check_test.sh/check_test.bat: check the test results
+
+cleanup.sh/cleanup.bat: remove generated files
+
+Example (Linux):
+================
+
+cd c212.BB
+cd changed_individual_sim_params/
+
+This test to show the effect that sampling parameters may have on model convergence and
+how they may be addressed.
+
+[]$ ls
+
+baseline/       check_test.r    cleanup.bat  data/    run.sh*
+check_test.bat  check_test.sh*  cleanup.sh*  run.bat  test/
+
+[]$ ls -l baseline/
+total 28
+-rw-r--r-- 1 clb13102 domain users  1388 Sep 14 11:32 conv.dat
+-rw-r--r-- 1 clb13102 domain users   346 Sep 14 11:32 ptheta80.dat
+-rw-r--r-- 1 clb13102 domain users  1939 Sep 14 11:32 ptheta.dat
+-rw-r--r-- 1 clb13102 domain users   182 Feb  2  2014 RAISED_AES
+-rw-r--r-- 1 clb13102 domain users 11568 Sep 14 11:32 summary.dat
+
+[]$ ls test/
+run.r
+
+The model is run twice - once with parameters which put model convergence in doubt and then
+with values which preform better.
+
+[]$ ./run.sh
+Loading required package: coda
+> source("run.r")
+Global Simulation Parameters:
+        Simulation Type: 1
+        w_alpha (width): 1.000000
+        m alpha (control): 6.000000
+        w_beta (width): 1.000000
+        m beta (control): 6.000000
+        w_gamma (width): 1.000000
+        m gamma (control): 6.000000
+        sigma_MH_alpha: 3.000000
+        sigma_MH_beta: 3.000000
+        sigma_MH_gamma: 0.200000
+        sigma_MH_theta: 0.200000
+        default weight: 0.500000
+1000 iterations...
+2000 iterations...
+:
+MCMC chain fitting complete.
+[1] "MCMC fitting complete."
+[1] "Evidence of lack of convergence"  <<- CONVERGENCE ISSUE
+Global Simulation Parameters:
+:
+:
+60000 iterations...
+MCMC chain fitting complete.
+[1] "MCMC fitting complete."
+Warning message:
+In RNGkind(sample.kind = "Rounding") : non-uniform 'Rounding' sampler used
+>
+
+The warning message is due to the sampling method used (changed in R 3.6.*).
+
+[]$ ls test
+conv.dat               ptheta80.dat  RAISED_AES  summary.dat
+CONVERGENCE_ISSUE.dat  ptheta.dat    run.r
+
+The file CONVERGENCE_ISSUE.dat contains the convergence outut for the poor choice of parameters.
+
+Check the results:
+------------------
+
+./check_test.sh
+echo $?
+0
+
+Test passed.

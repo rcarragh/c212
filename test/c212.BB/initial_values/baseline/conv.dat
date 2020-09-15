@@ -1,0 +1,54 @@
+Summary Convergence Diagnostics:
+================================
+theta:
+------
+Max Gelman-Rubin diagnostic (Bdy-sys_6 Adv-Ev_26): 1.026401
+Min Gelman-Rubin diagnostic (Bdy-sys_5 Adv-Ev_21): 1.000346
+gamma:
+------
+Max Gelman-Rubin diagnostic (Bdy-sys_2 Adv-Ev_2): 1.006236
+Min Gelman-Rubin diagnostic (Bdy-sys_6 Adv-Ev_29): 0.999988
+mu.gamma:
+---------
+Max Gelman-Rubin diagnostic (Bdy-sys_2): 1.000313
+Min Gelman-Rubin diagnostic (Bdy-sys_5): 1.000007
+mu.theta:
+---------
+Max Gelman-Rubin diagnostic (Bdy-sys_2): 1.001198
+Min Gelman-Rubin diagnostic (Bdy-sys_1): 1.000017
+sigma2.gamma:
+-------------
+Max Gelman-Rubin diagnostic (Bdy-sys_1): 1.001734
+Min Gelman-Rubin diagnostic (Bdy-sys_7): 1.000031
+sigma2.theta:
+-------------
+Max Gelman-Rubin diagnostic (Bdy-sys_6): 1.008857
+Min Gelman-Rubin diagnostic (Bdy-sys_3): 1.000152
+pi:
+---
+Max Gelman-Rubin diagnostic (Bdy-sys_4): 1.001441
+Min Gelman-Rubin diagnostic (Bdy-sys_3): 1.000237
+mu.gamma.0:
+-----------
+Gelman-Rubin diagnostic: 1.000110
+mu.theta.0:
+-----------
+Gelman-Rubin diagnostic: 1.000080
+tau2.gamma.0:
+-------------
+Gelman-Rubin diagnostic: 1.000317
+tau2.theta.0:
+-------------
+Gelman-Rubin diagnostic: 1.000981
+alpha.pi:
+---------
+Gelman-Rubin diagnostic: 1.000485
+beta.pi:
+--------
+Gelman-Rubin diagnostic: 1.000708
+
+Sampling Acceptance Rates:
+==========================
+theta:
+------
+[1] "Min: 0.290617, Max: 0.644750"
