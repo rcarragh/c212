@@ -58,3 +58,48 @@ cd c212.BB\single_chain\
 CALL cleanup.bat
 CALL run.bat
 cd ..\..
+
+cd c212.1a.interim/changed_parameters/
+CALL cleanup.bat
+CALL run.bat
+cd ..\..
+
+cd c212.1a.interim/default_parameters/
+CALL cleanup.bat
+CALL run.bat
+cd ..\..
+
+cd c212.1a.interim/initial_values/
+CALL cleanup.bat
+CALL run.bat
+cd ..\..
+
+cd c212.1a.interim/single_chain/
+CALL cleanup.bat
+CALL run.bat
+cd ..\..
+
+cd c212.BB.interim/changed_pm_weights/
+CALL cleanup.bat
+CALL run.bat
+cd ..\..
+
+cd c212.BB.interim/changed_sim_params/
+CALL cleanup.bat
+CALL run.bat
+cd ..\..
+
+cd c212.BB.interim/default_parameters/
+CALL cleanup.bat
+CALL run.bat
+cd ..\..
+
+cd c212.BB.interim/initial_values/
+CALL cleanup.bat
+CALL run.bat
+cd ..\..
+
+cd c212.BB.interim/single_chain/
+CALL cleanup.bat
+CALL run.bat
+cd ..\..

@@ -18,6 +18,7 @@ cd -
 cd ./c212.1a/default_parameters/
 ./cleanup.sh
 ./run.sh
+cd -
 
 cd ./c212.1a/initial_values
 ./cleanup.sh
@@ -59,4 +60,49 @@ cd ./c212.BB/single_chain/
 ./run.sh
 cd -
 
-exit 0
+cd ./c212.1a.interim/changed_parameters/
+./cleanup.sh
+./run.sh
+cd -
+
+cd ./c212.1a.interim/default_parameters/
+./cleanup.sh
+./run.sh
+cd -
+
+cd ./c212.1a.interim/initial_values/
+./cleanup.sh
+./run.sh
+cd -
+
+cd ./c212.1a.interim/single_chain/
+./cleanup.sh
+./run.sh
+cd -
+
+
+cd ./c212.BB.interim/changed_pm_weights/
+./cleanup.sh
+./run.sh
+cd -
+
+cd ./c212.BB.interim/changed_sim_params/
+./cleanup.sh
+./run.sh
+cd -
+
+cd ./c212.BB.interim/default_parameters/
+./cleanup.sh
+./run.sh
+cd -
+
+cd ./c212.BB.interim/initial_values/
+./cleanup.sh
+./run.sh
+cd -
+
+cd ./c212.BB.interim/single_chain/
+./cleanup.sh
+./run.sh
+cd -
+
