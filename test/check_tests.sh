@@ -7,7 +7,7 @@ echo "#####################################"
 echo "Checking error.control...."
 cd $H/error_control/
 
-./check.sh >/dev/null 2>&1
+./check_test.sh >/dev/null 2>&1
 if [ $? -ne 0 ]
 then
 	echo "error.control...FAILED <----"
