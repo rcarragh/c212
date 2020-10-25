@@ -20,3 +20,5 @@ Description: Provides a self-contained set of methods to aid clinical trial
     to the original Engineering and Physical Sciences Research Council (UK)
     funded project which was named CASE 2/12.
 License: GPL-3 + file LICENSE
+URL: https://github.com/rcarragh/c212
+BugReports: https://github.com/rcarragh/c212/issues
