@@ -11,7 +11,7 @@ output: github_document
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of c212 is to provide provides a self-contained set of methods, which use groupings of adverse events, to aid clinical trial safety investigators, statisticians and researchers, in the early detection of adverse events.
+The goal of c212 is to provide a self-contained set of methods, which use groupings of adverse events, to aid clinical trial safety investigators, statisticians and researchers, in the early detection of adverse events.
 
 ## Installation
 
