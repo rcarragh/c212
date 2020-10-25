@@ -4,12 +4,10 @@ Title: Methods for Detecting Safety Signals in Clinical Trials Using Body-System
 Version: 0.99
 Date: 2020-10-06
 Authors@R:  person(given = "Raymond",
-             family = "Carragher",
-             role = c("aut", "cre"),
-             email = "rcarragh@gmail.com",
-             comment = c(ORCID = "0000-0002-0120-625X"))
-Author: Raymond Carragher [aut, cre] (<https://orcid.org/0000-0002-0120-625X>)
-Maintainer: Raymond Carragher <rcarragh@gmail.com>
+                   family = "Carragher",
+                   role = c("aut", "cre"),
+                   email = "rcarragh@gmail.com",
+                   comment = c(ORCID = "0000-0002-0120-625X"))
 Depends: coda (>= 0.19)
 Encoding: UTF-8
 LazyData: true
