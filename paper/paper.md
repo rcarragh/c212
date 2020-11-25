@@ -52,10 +52,13 @@ Preferred Terms (PT), and Lower Level Terms (LLT). The PT is a single medical de
 patient or data recorder would describe a symptom or observation. Each LLT belongs to one PT and, in general, data will be recorded at the LLT 
 level but reported at the PT level (the adverse event). As of 2020 there are 27 SOCs and over 80,000 LLTs.
 
-The grouping of adverse events by SOC provides for possible relationships between the adverse events within a SOC. One consequence of this is the 
-possibility that, for treatments which may affect a particular SOC, there may be raised rates for a number of adverse event rates within that SOC.
-A number of methods, which use groupings of adverse events by body-system or System Organ Class, have been recently proposed to address these 
-issues. These methods, which include both error controlling procedures for multiple hypothesis 
+The grouping of adverse events by SOC (or body-system) provides for possible relationships between the adverse events within a SOC.
+One consequence of this is the possibility that, for treatments which may affect a particular SOC, there may be raised rates for a number of adverse events
+within that SOC.
+A number of methods have recently been proposed to address the statistical issues in adverse event analysis by using these groupings of adverse
+events by body-system or SOC, taking into account the additional information provided by these relationships to increase the power of detecting real 
+adverse event effects.
+These methods, which include both error controlling procedures for multiple hypothesis 
 testing [@BH1995; @HZZ2010; @MA2012; @Y2008; @M2006],
 and Bayesian modelling approaches [@BB2004; @XMC2011; @phdthesis], are implemented in the `R` package `c212` (Table \ref{table:1}). 
 
@@ -198,7 +201,7 @@ Interval I_index         B       AE Group Count Exposure
 mod.BB.interim <- c212.BB.interim(c212.trial.interval.data1)
 ```
 
-# Software Details and Availibility
+# Software Details and Availability
 
 The `c212` package was initially released to CRAN in 2017 and has been through a number of release cycles.
 Before each release a full set of unit and functional tests are performed on the package development system, including memory checks with 
