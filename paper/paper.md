@@ -43,8 +43,8 @@ There are a number of medical dictionaries in current use all of which provide s
 (Medical Dictionary for Regulatory Activities), which was developed by the [ICH](http://www.ich.org/) (International Council for Harmonisation of 
 Technical Requirements for Pharmaceuticals for Human Use) and is widely used by regulatory bodies, clinical research 
 organisations (CROs), and pharmaceutical companies. WHO-ART (World Health Organisation Adverse Reaction Terminology) is a similar dictionary 
-maintained by the Uppsala Monitoring Centre (Sweden) (http://www.umc-products.com) for the World Health Organisation Collaborating Centre for 
-International Drug Monitoring (http://bioportal.bioontology.org/ontologies/WHO-ART). MedDRA and WHO-ART have a similar hierarchical structure 
+maintained by the [Uppsala Monitoring Centre](http://www.umc-products.com) for the [World Health Organisation Collaborating Centre for 
+International Drug Monitoring](http://bioportal.bioontology.org/ontologies/WHO-ART). MedDRA and WHO-ART have a similar hierarchical structure 
 consisting of System Organ Classes (SOC) and various grouping and descriptor terms. 
 
 The MedDRA hierarchical structure consists of five levels: System Organ Class (SOC), High Level Group Terms (HLGT), High Level Terms (HLT), 
