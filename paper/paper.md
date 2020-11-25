@@ -38,6 +38,22 @@ In addition to end of trial analyses, a number of interim analyses may take plac
 offer the additional statistical challenge of testing accumulating data, with possibly differing recruitment rates on trial arms contributing 
 to a lack of balance in the data.
 
+Adverse events are typically defined by medical dictionaries, which provide a common reference terminology for use in and between clinical trials.
+There are a number of medical dictionaries in current use all of which provide similar services. One such dictionary is [MedDRA](http://www.meddra.org/) 
+(Medical Dictionary for Regulatory Activities), which was developed by the [ICH](http://www.ich.org/) (International Council for Harmonisation of 
+Technical Requirements for Pharmaceuticals for Human Use) and is widely used by regulatory bodies, clinical research 
+organisations (CROs), and pharmaceutical companies. WHO-ART (World Health Organisation Adverse Reaction Terminology) is a similar dictionary 
+maintained by the Uppsala Monitoring Centre (Sweden) (http://www.umc-products.com) for the World Health Organisation Collaborating Centre for 
+International Drug Monitoring (http://bioportal.bioontology.org/ontologies/WHO-ART). MedDRA and WHO-ART have a similar hierarchical structure 
+consisting of System Organ Classes (SOC) and various grouping and descriptor terms. 
+
+The MedDRA hierarchical structure consists of five levels: System Organ Class (SOC), High Level Group Terms (HLGT), High Level Terms (HLT), 
+Preferred Terms (PT), and Lower Level Terms (LLT). The PT is a single medical description of a symptom or observation while the LLT is how a 
+patient or data recorder would describe a symptom or observation. Each LLT belongs to one PT and, in general, data will be recorded at the LLT 
+level but reported at the PT level (the adverse event). As of 2020 there are 27 SOCs and over 80,000 LLTs.
+
+The grouping of adverse events by SOC provides for possible relationships between the adverse events within a SOC. One consequence of this is the 
+possibility that, for treatments which may affect a particular SOC, there may be raised rates for a number of adverse event rates within that SOC.
 A number of methods, which use groupings of adverse events by body-system or System Organ Class, have been recently proposed to address these 
 issues. These methods, which include both error controlling procedures for multiple hypothesis 
 testing [@BH1995; @HZZ2010; @MA2012; @Y2008; @M2006],
@@ -195,6 +211,18 @@ from the corresponding GitHub repository [@github].
 The authors are interested in extending the software to include new methods, particularly in the area of safety analysis, and would welcome 
 collaborations in this area. Any support issues or questions can be addressed directly to the corresponding author, through the associated CRAN 
 maintainer email address, or through the Github repository.
+
+## Performance
+The Bayesian models are expensive to fit in terms of both computation and memory. The main issue is the number of parameters in the model. For the
+Berry and Berry model with $N$ adverse events, and $B$ SOCs there are $(2 \times N + 5 \times B + 6)$ parameters in total. With $C$ parallel MCMC 
+chains and $I$ iterations of the MCMC sampler, this will require space for $C \times I \times (2 \times N + 5 \times B + 6)$ double precision 
+numbers to store the samples. For larger datasets, the calculation of the convergence diagnostics and summary statistics may be time consuming 
+as the samples are passed to the `coda` package. 
+
+**Example:** A trial with 23 SOCs and 497 AEs, 5 parallel chains and 40,000 iterations after burn-in, will require space for 
+133,800,000 doubles, equating to approximately 1GB of memory storage for the samples alone (assuming 8 bytes per double).
+
+It is recommended that at least twice the storage required for the samples be available for fitting the model.
 
 # Acknowledgements
 
