@@ -225,7 +225,7 @@ as the samples are passed to the `coda` package.
 **Example:** A trial with 23 SOCs and 497 AEs, 5 parallel chains and 40,000 iterations after burn-in, will require space for 
 133,800,000 doubles, equating to approximately 1GB of memory storage for the samples alone (assuming 8 bytes per double).
 
-It is recommended that at least twice the storage required for the samples be available for fitting the model.
+It is recommended that at least twice the storage required for the samples be available for fitting any of the Bayesian models.
 
 # Acknowledgements
 
