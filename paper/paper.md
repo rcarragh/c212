@@ -39,7 +39,7 @@ offer the additional statistical challenge of testing accumulating data, with po
 to a lack of balance in the data.
 
 Adverse events are typically defined by medical dictionaries, which provide a common reference terminology for use in and between clinical trials.
-There are a number of medical dictionaries in current use all of which provide similar services. One such dictionary is [MedDRA](http://www.meddra.org/) 
+There are a number of medical dictionaries in current use, all of which provide similar services. One such dictionary is [MedDRA](http://www.meddra.org/) 
 (Medical Dictionary for Regulatory Activities), which was developed by the [ICH](http://www.ich.org/) (International Council for Harmonisation of 
 Technical Requirements for Pharmaceuticals for Human Use) and is widely used by regulatory bodies, clinical research 
 organisations (CROs), and pharmaceutical companies. WHO-ART (World Health Organisation Adverse Reaction Terminology) is a similar dictionary 
@@ -191,7 +191,7 @@ The high posterior probabilities may indicate a possible association with treatm
 
 ## Interim Analysis
 Apart from the function used to fit the model, the procedure for fitting and accessing interim analysis data is exactly the same as for the 
-Berry and berry model. 
+Berry and Berry model. 
 
 ```r
 library(c212)
