@@ -94,7 +94,7 @@ observational data being developed [@RC2020].
 
 The `c212` package is currently being used both for clinical trial safety analysis [@FKL2016; @Munsaka2018; @WWM2018] and as a research tool in the
 investigation and development of new safety methods [@Tan2020; @Tan2019].
-It has also been [implemeted](https://visual-analytics.shinyapps.io/index/) as part of an [ASA Biopharm Safety Working Group](https://community.amstat.org/biop/workinggroups/safety/safety-home) workstream.
+It has also been [implemented](https://visual-analytics.shinyapps.io/index/) as part of an [ASA Biopharm Safety Working Group](https://community.amstat.org/biop/workinggroups/safety/safety-home) workstream.
 
 
 
