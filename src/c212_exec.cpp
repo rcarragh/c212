@@ -3,7 +3,7 @@
 
 #include<map>
 
-#define R_NO_REMAP
+#include "c212_Rdefines.h"
 
 #include <R.h>
 #include <Rmath.h>
